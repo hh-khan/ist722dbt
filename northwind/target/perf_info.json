@@ -1,15 +1,15 @@
 {
-    "path_count": 204,
+    "path_count": 156,
     "parsed_path_count": 0,
     "static_analysis_path_count": 0,
     "static_analysis_parsed_path_count": 0,
     "is_partial_parse_enabled": true,
     "is_static_analysis_enabled": true,
-    "read_files_elapsed": 0.01881841290742159,
-    "load_all_elapsed": 0.09493304044008255,
+    "read_files_elapsed": 0.11276448494754732,
+    "load_all_elapsed": 0.18462829303462058,
     "projects": [
         {
-            "project_name": "northwind",
+            "project_name": "my_new_project",
             "elapsed": 0,
             "parsers": [],
             "parsed_path_count": 0
@@ -22,12 +22,6 @@
         },
         {
             "project_name": "dbt",
-            "elapsed": 0,
-            "parsers": [],
-            "parsed_path_count": 0
-        },
-        {
-            "project_name": "dbt_utils",
             "elapsed": 0,
             "parsers": [],
             "parsed_path_count": 0
