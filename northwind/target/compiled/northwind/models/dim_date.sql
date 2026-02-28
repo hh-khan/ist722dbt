@@ -1,4 +1,4 @@
-select
+select     
     datekey::int as datekey,
     date,
     year,

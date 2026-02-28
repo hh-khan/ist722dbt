@@ -2,9 +2,11 @@
   
     
 
-        create or replace transient table analytics.dbt_hkhan_northwind.dim_date
-         as
-        (select
+create or replace transient table analytics.dbt_hkhan_northwind.dim_date
+    
+    
+    
+    as (select     
     datekey::int as datekey,
     date,
     year,
@@ -19,6 +21,8 @@
     dayname,
     weekday
     from raw.conformed.DateDimension
-        );
-      
+    )
+;
+
+
   
