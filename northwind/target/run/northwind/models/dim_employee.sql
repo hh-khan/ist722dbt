@@ -2,9 +2,11 @@
   
     
 
-        create or replace transient table analytics.dbt_hkhan_northwind.dim_employee
-         as
-        (with stg_employees as (
+create or replace transient table analytics.dbt_hkhan_northwind.dim_employee
+    
+    
+    
+    as (with stg_employees as (
     select * from raw.northwind.Employees
 ),
 stg_supervisors as (
@@ -21,6 +23,8 @@ select
     concat(s.firstname  , ' ' , s.lastname) as supervisornamefirstlast
 from stg_employees e
     left join stg_supervisors s on e.reportsto = s.employeeid
-        );
-      
+    )
+;
+
+
   

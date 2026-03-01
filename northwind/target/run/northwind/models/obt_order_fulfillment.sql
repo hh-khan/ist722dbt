@@ -2,9 +2,11 @@
   
     
 
-        create or replace transient table analytics.dbt_hkhan_northwind.obt_order_fulfillment
-         as
-        (with f_order_fulfillment as (
+create or replace transient table analytics.dbt_hkhan_northwind.obt_order_fulfillment
+    
+    
+    
+    as (with f_order_fulfillment as (
     select * from analytics.dbt_hkhan_northwind.fact_order_fulfillment
 ),
 d_customer as (
@@ -26,6 +28,8 @@ select
     left join d_customer on f.customerkey = d_customer.customerkey
     left join d_employee on f.employeekey = d_employee.employeekey
     left join d_date on f.orderdatekey = d_date.datekey
-        );
-      
+    )
+;
+
+
   

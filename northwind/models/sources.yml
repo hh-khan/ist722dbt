@@ -43,7 +43,7 @@ sources:
             tests:
               - unique
       - name: Shippers
-columns:
+        columns:
           - name: ShipperID
             tests:
               - unique      

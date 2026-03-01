@@ -2,9 +2,11 @@
   
     
 
-        create or replace transient table analytics.dbt_hkhan_northwind.fact_order_fulfillment
-         as
-        (with stg_orders as 
+create or replace transient table analytics.dbt_hkhan_northwind.fact_order_fulfillment
+    
+    
+    
+    as (with stg_orders as 
 (
     select
         OrderID,  
@@ -46,6 +48,8 @@ select
 from stg_orders o
     join stg_order_details od on o.orderid = od.orderid
     join stg_shippers s on s.shipperid = o.shipvia
-        );
-      
+    )
+;
+
+
   
